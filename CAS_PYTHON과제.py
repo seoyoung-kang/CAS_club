@@ -15,9 +15,7 @@ else:
 N = int(input("임의의 숫자를 입력하시요 : "))
 P = [0, 1]
 
-for i in range(0, N):
-    P.append(P[i] + P[i + 1])
-
-print(P)
+for i in range(1, N):
+    P.append(P[i] + P[i - 1])
 
 print(P[N])
