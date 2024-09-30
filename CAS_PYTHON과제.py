@@ -18,4 +18,6 @@ P = [0, 1]
 for i in range(1, N - 1):
     P.append(P[i] + P[i - 1])
     
-print(P[-1])
+print(P[N - 1])
+
+
